@@ -10,11 +10,11 @@ constructor(obj){
     this.#items.push(newItem);
     }
   removeItem(itemToRemove){
-    const rez = this.#items.indexOf(itemToRemove)
+    const rez = this.#items.indexOf(itemToRemove);
     if(rez === -1){
       return this.#items;
     }
-       this.#items.splice(rez, 1);
+       this.#items.splice(rez, 1)
   }
 }
 
