@@ -1,7 +1,7 @@
 class Storage {
 #items;
 constructor(obj){
-   this.#items = obj;
+   this.#items = obj
 }
   getItems(){
   return this.#items;
@@ -10,11 +10,11 @@ constructor(obj){
     this.#items.push(newItem);
     }
   removeItem(itemToRemove){
-    const rez = this.#items.indexOf(itemToRemove);
-    if(rez === -1){
+    const res = this.#items.indexOf(itemToRemove);
+    if(res === -1){
       return this.#items;
     }
-       this.#items.splice(rez, 1)
+  return this.#items.splice(res, 1);
   }
 }
 
